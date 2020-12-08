@@ -5,6 +5,10 @@ var app = express();
 
 app.use('/api/user', userRouter)
 
+app.get('/login', (req, res) => {
+    res.send('jkasdfhhasg');
+})
+
 app.use(bodyParser.urlencoded({
     extended: false
 }))
